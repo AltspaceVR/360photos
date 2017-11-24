@@ -34,7 +34,7 @@ if (param('asvr')) {
 
 	// add a 3D button to the app for flipping through images
 	var nextButton = new THREE.Mesh(
-		new THREE.BoxGeometry(50, 50, 50),
+		new THREE.BoxGeometry(30, 30, 30),
 		new THREE.MeshBasicMaterial({color: '#2196F3'})
 	);
 	nextButton.position.y = -300;
@@ -67,11 +67,9 @@ altspace.getDocument().then(doc => {
 	doc.userData.altspace = { collider: { enabled: false } };
 
 	// Optionally scale and reposition the sphere.
-	// if (param('scaled')) {
-	// 	doc.scale.multiplyScalar(0.2);
-	// 	// Units are in "pixels" by default.
-	// 	doc.position.y = -300;
-	// };
+	// doc.scale.multiplyScalar(0.9);
+	// Units are in "pixels" by default.
+	// doc.position.y = -300;
 
 	// Finally, render it into the app.
 	sim.scene.add(doc);
