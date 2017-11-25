@@ -5,12 +5,21 @@ function qs(s) {
 	return document.querySelector(s);
 }
 
+// https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+function getParameterByName(name, url) {
+    if (!url) { url = window.location.href; }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) { return null; }
+    if (!results[2]) { return ''; }
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
 /* globals THREE, altspace, Flickr, moment */
 
-var params = new URLSearchParams(window.location.search);
-
 // default data url, images of altspace environments
-var url = params.get('url') || 'https://altspacevr.github.io/360photos/public/asvr.json';
+var url = getParameterByName('collection') || 'https://altspacevr.github.io/360photos/public/asvr.json';
 
 // Create a "Simulation". This just takes care of some app boilerplate for us.
 var sim = new altspace.utilities.Simulation();

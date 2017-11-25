@@ -1,12 +1,10 @@
 /* globals THREE, altspace, Flickr, moment */
 
-import {param, qs} from './utils'
+import {param, qs, getParameterByName} from './utils'
 import config from '../app.config'
 
-var params = new URLSearchParams(window.location.search);
-
 // default data url, images of altspace environments
-var url = params.get('url') || 'https://altspacevr.github.io/360photos/public/asvr.json';
+var url = getParameterByName('collection') || 'https://altspacevr.github.io/360photos/public/asvr.json';
 
 // Create a "Simulation". This just takes care of some app boilerplate for us.
 let sim = new altspace.utilities.Simulation();

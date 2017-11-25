@@ -4,14 +4,14 @@
 Load https://altspacevr.github.io/360photos/public/ into a public enclosure in AltspaceVR
 
 ### Query Parameters
-- **`initialPlaylist`** _A playlist id from YouTube_
-  Up to 50 videos will be populated into the jukebox from the YouTube playlist.
-  E.g. If you have a YouTube playlist like
-  `https://www.youtube.com/watch?v=XFkzRNyygfk&list=RDEMk8jEIzOyB2trfXZrSEVz_Q`
-  You can load it into video jukebox like
-  `https://video-jukebox.firebaseapp.com/?initialPlaylist=RDEMk8jEIzOyB2trfXZrSEVz_Q`
+- **`collection`** _A url for JSON file containing urls of 360 photos_
+  The [default collection](altspacevr.github.io/360photos/public/asvr.json) is a set of (low-res) of AltspaceVR environments and an example of the format.
 
 ### Recipes
+-
+```
+https://altspacevr.github.io/360photos/public/?collection=https://altspacevr.github.io/360photos/public/tavern.json
+```
 
 ## Development
 ### Setup
