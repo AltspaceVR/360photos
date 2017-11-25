@@ -39,7 +39,7 @@ function render (photos) {
 altspace.getDocument().then(doc => {
   // The doc object is a Three.js Mesh that we can manipulate.
   // Here we change its geometry to a sphere instead of the default 2D plane.
-  let docGeo = new THREE.SphereGeometry(1, 32, 32);
+  let docGeo = new THREE.SphereBufferGeometry(1, 64, 64);
   doc.geometry = docGeo;
   doc.geometry.verticesNeedUpdate = true;
 
