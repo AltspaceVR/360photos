@@ -9,6 +9,8 @@ function qs(s) {
 
 // Create a "Simulation". This just takes care of some app boilerplate for us.
 var sim = new altspace.utilities.Simulation();
+
+// default data url
 var url = 'https://altspacevr.github.io/360photos/public/asvr.json';
 
 $.getJSON(url, function( data ) {
