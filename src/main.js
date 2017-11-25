@@ -3,11 +3,13 @@
 import {param, qs} from './utils'
 import config from '../app.config'
 
+var params = new URLSearchParams(window.location.search);
+
+// default data url, images of altspace environments
+var url = params.get('url') || 'https://altspacevr.github.io/360photos/public/asvr.json';
+
 // Create a "Simulation". This just takes care of some app boilerplate for us.
 let sim = new altspace.utilities.Simulation();
-
-// default data url
-var url = 'https://altspacevr.github.io/360photos/public/asvr.json'
 
 $.getJSON(url, function( data ) {
   render(data['photos']);

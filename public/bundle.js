@@ -7,11 +7,13 @@ function qs(s) {
 
 /* globals THREE, altspace, Flickr, moment */
 
+var params = new URLSearchParams(window.location.search);
+
+// default data url, images of altspace environments
+var url = params.get('url') || 'https://altspacevr.github.io/360photos/public/asvr.json';
+
 // Create a "Simulation". This just takes care of some app boilerplate for us.
 var sim = new altspace.utilities.Simulation();
-
-// default data url
-var url = 'https://altspacevr.github.io/360photos/public/asvr.json';
 
 $.getJSON(url, function( data ) {
   render(data['photos']);
