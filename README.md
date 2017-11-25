@@ -8,9 +8,15 @@ Load [https://altspacevr.github.io/360photos/public/](https://altspacevr.github.
   The [default collection](https://altspacevr.github.io/360photos/public/asvr.json) is a set of (low-res) of AltspaceVR environments and an example of the format.
 
 ### Recipes
-- Show the default collection of (low-res) AltspaceVR environment scans [](https://altspacevr.github.io/360photos/public/)
-- Show a custom collection by specifying a url [https://altspacevr.github.io/360photos/public/?collection=https://altspacevr.github.io/360photos/public/tavern.json](https://altspacevr.github.io/360photos/public/?collection=https://altspacevr.github.io/360photos/public/tavern.json)
-- Show a high resolution collection [https://altspacevr.github.io/360photos/public/?collection=https://altspacevr.github.io/360photos/public/thetas.json](https://altspacevr.github.io/360photos/public/?collection=https://altspacevr.github.io/360photos/public/thetas.json)
+- Show the default collection of (low-res) AltspaceVR environment scans
+
+[https://altspacevr.github.io/360photos/public/]
+- Show a custom collection by specifying a url
+
+[https://altspacevr.github.io/360photos/public/?collection=https://altspacevr.github.io/360photos/public/tavern.json]
+- Show a high resolution collection 
+
+[https://altspacevr.github.io/360photos/public/?collection=https://altspacevr.github.io/360photos/public/thetas.json]
 - Specify your own collection of photos
 ```
 https://altspacevr.github.io/360photos/public/?collection=<path-to-a-json-file>
