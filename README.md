@@ -4,7 +4,7 @@
 Load [https://altspacevr.github.io/360photos/public/](https://altspacevr.github.io/360photos/public/) into a public enclosure in AltspaceVR
 
 ### Query Parameters
-- **`collection`** _A url for JSON file containing urls of 360 photos_
+- **`collection`** _A url for a JSON file containing urls of 360 photos_
   The [default collection](https://altspacevr.github.io/360photos/public/asvr.json) is a set of (low-res) of AltspaceVR environments and an example of the format.
 
 ### Recipes
